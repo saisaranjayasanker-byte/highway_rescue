@@ -1,9 +1,12 @@
+/* 1. All imports first */
 @import "tailwindcss" source(none);
-@source "../src";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
+/* 2. Directives and sources next */
+@source "../src";
 
+/* 3. Custom variants and overrides last */
+@custom-variant dark (&:is(.dark *));
 /*
  * Design system definition.
  *
